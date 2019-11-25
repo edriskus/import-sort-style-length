@@ -1,0 +1,33 @@
+{
+  "name": "import-sort-style-length",
+  "version": "0.0.1",
+  "description": "Line-length focused style for import-sort",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "tsc -b .",
+    "build": "tsc -b .",
+    "build:watch": "tsc -b . -w",
+    "test": "mocha --require ts-node/register --recursive \"test/**/*.ts\"",
+    "test:watch": "mocha -w --require ts-node/register --recursive \"test/**/*.ts\""
+  },
+  "author": "Edmundas Riskus <edmundas@riskus.lt> (https://github.com/edriskus)",
+  "repository": "edriskus/import-sort-style-length",
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.3",
+    "@types/node": "^10.3.5",
+    "chai": "^4.0.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "import-sort-style": "^6.0.0",
+    "import-sort-parser": "^6.0.0"
+  }
+}
